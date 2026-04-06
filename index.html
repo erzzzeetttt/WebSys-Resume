@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - John Benedict T. Castillo</title>
+  <link rel="stylesheet" href="des.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="profile-left">
+        <img src="assets/jbc.jpg" alt="Professional profile photo of John Benedict T. Castillo" class="profile-img" />
+      </div>
+      <div class="profile-right">
+        <h1>John Benedict T. Castillo</h1>
+        <p class="tagline">Aspiring Web Developer | Student | UI/UX Learner</p>
+        <p id="welcomeMessage">WELCOME TO MY INTERACTIVE PROFILE</p>
+        <div class="top-buttons">
+          <button id="themeToggle">Toggle Dark Mode</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="container nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container resume-grid">
+    <section id="about" class="card">
+      <h2>About My Profile</h2>
+      <p>
+        I am John Benedict T. Castillo, a student and aspiring web developer with
+        a strong interest in front-end development, responsive design, and interactive web applications.
+        I enjoy learning new technologies and creating projects that improve my skills and creativity.
+      </p>
+      <button id="toggleMoreBtn">View More</button>
+      <div id="moreAbout" class="hidden">       
+        <p>
+          Hi! I am committed to learn, developing a website and applications.
+          My goal is to gain experience in web development while continuing to improve
+          my skills in HTML, CSS, JavaScript, and other language.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <table class="education-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Program</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024 - Present</td>
+            <td>University of Science and Technology of Southern Philippines</td>
+            <td>Bachelor of Science in Information Technology</td>
+          </tr>
+          <tr>
+            <td>2022 - 2024</td>
+            <td>Christian Samaritan School</td>
+            <td>CSS Strand</td>
+          </tr>
+          <tr>
+            <td>2018 - 2022</td>
+            <td>Tagoloan National High School</td>
+            <td>TLE</td>
+          </tr>
+          <tr>
+            <td>2012 - 2018</td>
+            <td>Tagoloan Central School</td>
+            <td>None</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="skills" class="card3">
+      <h2>Skills</h2>
+      <ul id="skillsList" class="skills-list">
+         <li>Basic Networking Concepts</li>
+         <li>UI/UX Design Fundamentals</li>
+         <li>Creativity and Attention to Detail</li>
+         <li>Data Annotator</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>My Projects / Portfolio</h2>
+
+      <div id="projectContainer" class="project-list">
+        <div class="project-item" data-category="web">
+          <h3>Cashiering System</h3>
+          <p>Created a cashiering system using Java language.</p>
+        </div>
+
+        <div class="project-item" data-category="ui">
+          <h3>Motorparts Inventory System</h3>
+          <p>Created an inventory system using MySQL and Java language.</p>
+        </div>
+
+        <div class="project-item" data-category="school">
+          <h3>Tetris Game</h3>
+          <p>We developed a game called tetris as a school project using Python language.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card2">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:bjhitsugaya37@gmail.com">bjhitsugaya37@gmail.com</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/bj.castillo.37" target="facebook.com/bj.castillo.37">facebook.com/bj.castillo.37</a></p>
+    </section>
+
+    <section id="messageSection" class="card">
+      <h3>Send a Message</h3>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="formFeedback"></p>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2026 John Benedict T. Castillo. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="fscript.js"></script>
+</body>
+</html>
